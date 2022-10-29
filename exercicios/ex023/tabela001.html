@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            border: 3px solid gray;
+        }
+
+        tr{
+            background-color: lightpink;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.coluna01{
+            background-color: rgb(92, 46, 167);
+        }
+        td.coluna02{
+            background-color: rgb(145, 55, 172);
+        }
+        td.coluna03{
+            background-color: rgb(173, 46, 167);
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela 
+                TABLE DATA = dado de tabela
+    -->
+    <table>
+        <tr> <!--Primeira linha-->
+            <td class="coluna01">A1</td>
+            <td class="coluna02">B1</td>
+            <td class="coluna03">C1</td>
+        </tr>
+        <tr> <!--Segunda linha-->
+            <td class="coluna01">A2</td>
+            <td class="coluna02">B2</td>
+            <td class="coluna03">C2</td>
+        </tr>
+        <tr> <!--Terceira linha-->
+            <td class="coluna01">A3</td>
+            <td class="coluna02">B3</td>
+            <td class="coluna03">C3</td>
+        </tr>
+        <tr> <!--Quarta linha-->
+            <td class="coluna01">A4</td>
+            <td class="coluna02">B4</td>
+            <td class="coluna03">C4</td>
+        </tr>
+    </table>
+</body>
+</html>
