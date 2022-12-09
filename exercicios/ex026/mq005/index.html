@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <span id="menu" class="material-symbols-sharp" onclick="clicounomenu()">
+            menu
+            </span>
+        <nav id="opcoes">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -28,5 +32,15 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, unde! Quisquam, non illo, labore nam aliquam commodi deleniti voluptatem delectus magni nisi corporis, facilis quaerat at aperiam cumque obcaecati maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore ipsam dolore! Exercitationem, expedita eaque veritatis ipsam deleniti quidem temporibus accusamus atque dolorem qui ipsum repudiandae, a magni eum ad? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga earum magnam consequuntur corporis sapiente incidunt doloribus modi perspiciatis officiis. Quasi aspernatur voluptates ducimus harum facere corrupti, distinctio veritatis. Molestias, quidem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quasi eius laborum animi et commodi accusamus incidunt corporis culpa officia molestias enim, a fugiat pariatur quos libero ad mollitia nobis!</p>
         </article>
     </main>
+    <script>
+        function clicounomenu(){
+            if (opcoes.style.display == 'block'){
+            opcoes.style.display = 'none'
+        }
+        else{
+            opcoes.style.display = 'block'
+        }
+    }
+    </script>
 </body>
 </html>

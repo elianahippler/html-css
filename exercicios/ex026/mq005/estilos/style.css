@@ -22,8 +22,26 @@ header > h1{
     color: rgb(32, 3, 32);
 }
 
-nav{
+#menu{
     display: block;
+    border-radius: 12px;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(79, 8, 88, 0.26);
+    color: white;
+    border-top: 3px solid rgba(206, 129, 216, 0.37);
+}
+
+#menu:hover{
+    background-color: rgba(119, 19, 133, 0.212);
+    border-top: 2px solid rgba(237, 157, 248, 0.37);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+nav{
+    display: none;
     padding-bottom: 7px;
 }
 
