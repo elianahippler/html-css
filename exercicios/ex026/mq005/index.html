@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu Site</h1>
-        <span id="menu" class="material-symbols-sharp" onclick="clicounomenu()">
+        <span id="menu" class="material-symbols-outlined" onclick="clicounomenu()">
             menu
             </span>
         <nav id="opcoes">
@@ -33,6 +34,15 @@
         </article>
     </main>
     <script>
+        function mudoutamanho(){
+            if (window.innerWidth >= 768){
+                opcoes.style.display = 'block'
+            }
+            else{
+                opcoes.style.display = 'none'
+            }
+        }
+
         function clicounomenu(){
             if (opcoes.style.display == 'block'){
             opcoes.style.display = 'none'

@@ -23,14 +23,14 @@ header > h1{
 }
 
 #menu{
+    height: 20px;
     display: block;
-    border-radius: 12px;
     padding: 12px;
     text-decoration: none;
     text-align: center;
-    background-color: rgba(79, 8, 88, 0.26);
+    background-color: rgba(79, 8, 88, 0.432);
     color: white;
-    border-top: 3px solid rgba(206, 129, 216, 0.37);
+    border-top: 1px solid rgba(255, 255, 255, 0.37);
 }
 
 #menu:hover{
@@ -54,6 +54,7 @@ nav > ul > li{
 }
 
 nav > ul > li > a{
+    height: 16px;
     display: block;
     border-radius: 12px;
     padding: 12px;
@@ -61,12 +62,12 @@ nav > ul > li > a{
     text-align: center;
     background-color: rgba(79, 8, 88, 0.26);
     color: white;
-    border-top: 3px solid rgba(206, 129, 216, 0.37);
+    border: 3px solid rgba(206, 129, 216, 0.37);
 }
 
 nav > ul > li > a:hover{
     background-color: rgba(119, 19, 133, 0.212);
-    border-top: 2px solid rgba(237, 157, 248, 0.37);
+    border: 2px solid rgba(237, 157, 248, 0.37);
     text-decoration: underline;
     transition: 0.3s;
 }
